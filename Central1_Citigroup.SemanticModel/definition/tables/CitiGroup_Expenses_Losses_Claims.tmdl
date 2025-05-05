@@ -1,0 +1,48 @@
+table CitiGroup_Expenses_Losses_Claims
+	lineageTag: 25df8c2a-c7ab-48f7-89ea-fdf990d12b24
+	sourceLineageTag: [central1].[CitiGroup_Expenses_Losses_Claims]
+
+	column Year
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: adee4e1c-1482-432f-92fa-10dcf34dbeef
+		sourceLineageTag: Year
+		summarizeBy: sum
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column OperatingExpenses
+		dataType: double
+		sourceProviderType: float
+		lineageTag: b46ebbd6-cf6a-48fb-812b-e81a25c156f9
+		sourceLineageTag: OperatingExpenses
+		summarizeBy: sum
+		sourceColumn: OperatingExpenses
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ProvisionsForCreditLossesClaims
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 068c5a50-4061-4c87-8eea-80b486ab423d
+		sourceLineageTag: ProvisionsForCreditLossesClaims
+		summarizeBy: sum
+		sourceColumn: ProvisionsForCreditLossesClaims
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition CitiGroup_Expenses_Losses_Claims = entity
+		mode: directLake
+		source
+			entityName: CitiGroup_Expenses_Losses_Claims
+			schemaName: central1
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

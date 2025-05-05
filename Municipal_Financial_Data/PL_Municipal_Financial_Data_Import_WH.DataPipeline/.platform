@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataPipeline",
+    "displayName": "PL_Municipal_Financial_Data_Import_WH"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "b525a799-6b0a-9621-4525-2e8f064153ad"
+  }
+}

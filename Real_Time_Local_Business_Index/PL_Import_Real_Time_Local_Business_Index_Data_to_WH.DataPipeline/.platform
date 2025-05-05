@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataPipeline",
+    "displayName": "PL_Import_Real_Time_Local_Business_Index_Data_to_WH"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "038264c6-6d0c-a1e9-4ac4-870f979f3d21"
+  }
+}

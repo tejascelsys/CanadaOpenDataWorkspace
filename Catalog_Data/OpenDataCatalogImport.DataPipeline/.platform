@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataPipeline",
+    "displayName": "OpenDataCatalogImport"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "7206672c-8f20-8fd6-42c5-21ef26cdbdcb"
+  }
+}

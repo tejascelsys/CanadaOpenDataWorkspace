@@ -1,0 +1,60 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.60\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "646d99c14c13cac6b109",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"573d15d5d19a00991ba2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":400,\"y\":12,\"z\":1,\"width\":353,\"height\":753,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"wwi_shippers.CompanyName\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(WWI_FactOrders.OrderID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"wwi_shippers\",\"Type\":0},{\"Name\":\"w1\",\"Entity\":\"WWI_FactOrders\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"CompanyName\"},\"Name\":\"wwi_shippers.CompanyName\",\"NativeReferenceName\":\"CompanyName\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w1\"}},\"Property\":\"OrderID\"}},\"Function\":0},\"Name\":\"Sum(WWI_FactOrders.OrderID)\",\"NativeReferenceName\":\"Sum of OrderID\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w1\"}},\"Property\":\"OrderID\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 753.00,
+          "width": 353.00,
+          "x": 400.00,
+          "y": 12.00,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"c43b1816c344044b997e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":763,\"y\":12,\"z\":2,\"width\":386,\"height\":741,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"wwi_categories.CategoryName\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(WWI_FactOrders.OrderID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"WWI_FactOrders\",\"Type\":0},{\"Name\":\"w1\",\"Entity\":\"wwi_categories\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w1\"}},\"Property\":\"CategoryName\"},\"Name\":\"wwi_categories.CategoryName\",\"NativeReferenceName\":\"CategoryName\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"OrderID\"}},\"Function\":0},\"Name\":\"Sum(WWI_FactOrders.OrderID)\",\"NativeReferenceName\":\"Sum of OrderID\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"OrderID\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 741.00,
+          "width": 386.00,
+          "x": 763.00,
+          "y": 12.00,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"c5b1408595c2d0c7918a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":0,\"z\":0,\"width\":390,\"height\":753,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"WWI_FactOrders.ShipCountry\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(WWI_FactOrders.OrderID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"WWI_FactOrders\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"ShipCountry\"},\"Name\":\"WWI_FactOrders.ShipCountry\",\"NativeReferenceName\":\"ShipCountry\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"OrderID\"}},\"Function\":0},\"Name\":\"Sum(WWI_FactOrders.OrderID)\",\"NativeReferenceName\":\"Sum of OrderID\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"OrderID\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 753.00,
+          "width": 390.00,
+          "x": 10.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

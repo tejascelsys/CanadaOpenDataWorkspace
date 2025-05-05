@@ -1,0 +1,72 @@
+{
+  "autoRefresh": {
+    "enabled": false
+  },
+  "baseQueries": [],
+  "tiles": [
+    {
+      "id": "e6aeed59-ade2-4522-8fc1-210ed785ef7d",
+      "queryRef": {
+        "kind": "query",
+        "queryId": "f6bfbc0e-b9ef-4ce3-9b1a-4c0b0a2fe0de"
+      },
+      "title": "EventhouseCommandLogs Table Preview",
+      "visualType": "table",
+      "pageId": "5124b254-60ce-4c09-92e3-f12e25652a23",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "width": 6,
+        "height": 6
+      },
+      "visualOptions": {}
+    }
+  ],
+  "dataSources": [
+    {
+      "id": "0ddc097f-0be9-42ce-851f-ebd53e6c7b74",
+      "kind": "kusto-trident",
+      "clusterUri": "https://trd-rdymgb352zwub79yuz.z6.kusto.fabric.microsoft.com",
+      "database": "327b8be5-4d1f-4060-9280-9a6e41b14251",
+      "name": "Monitoring KQL database",
+      "scopeId": "kusto-trident",
+      "workspace": "a0923a92-f29f-42fe-8cb8-9a0acd1a040a"
+    }
+  ],
+  "pages": [
+    {
+      "name": "Page 1",
+      "id": "5124b254-60ce-4c09-92e3-f12e25652a23"
+    }
+  ],
+  "parameters": [
+    {
+      "kind": "duration",
+      "id": "e3a17537-9c1c-4126-b5b4-34b5443cc8a7",
+      "displayName": "Time range",
+      "description": "",
+      "beginVariableName": "_startTime",
+      "endVariableName": "_endTime",
+      "defaultValue": {
+        "kind": "dynamic",
+        "count": 1,
+        "unit": "hours"
+      },
+      "showOnPages": {
+        "kind": "all"
+      }
+    }
+  ],
+  "queries": [
+    {
+      "id": "f6bfbc0e-b9ef-4ce3-9b1a-4c0b0a2fe0de",
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "0ddc097f-0be9-42ce-851f-ebd53e6c7b74"
+      },
+      "usedVariables": [],
+      "text": "['EventhouseCommandLogs'] | take 10"
+    }
+  ],
+  "schema_version": "61"
+}

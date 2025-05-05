@@ -1,0 +1,268 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "type": "Copy",
+        "typeProperties": {
+          "source": {
+            "type": "LakehouseTableSource",
+            "datasetSettings": {
+              "type": "LakehouseTable",
+              "typeProperties": {
+                "table": "Local_Business_Condition_Index"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "Real_Time_Local_Business_Index_LH",
+                "properties": {
+                  "type": "Lakehouse",
+                  "typeProperties": {
+                    "artifactId": "255d9954-5ebf-9357-4a02-1ed69657e88e",
+                    "workspaceId": "00000000-0000-0000-0000-000000000000",
+                    "rootFolder": "Tables"
+                  },
+                  "annotations": []
+                }
+              },
+              "annotations": []
+            }
+          },
+          "sink": {
+            "type": "DataWarehouseSink",
+            "tableOption": "autoCreate",
+            "preCopyScript": "IF EXISTS (SELECT 1 \n           FROM INFORMATION_SCHEMA.TABLES \n           WHERE TABLE_NAME = 'Local_Business_Condition_Index' AND TABLE_SCHEMA = 'RealTimeBusinessIndex')\nBEGIN\n    DELETE FROM RealTimeBusinessIndex.Local_Business_Condition_Index;\nEND",
+            "allowCopyCommand": true,
+            "copyCommandSettings": {},
+            "disableMetricsCollection": false,
+            "datasetSettings": {
+              "type": "DataWarehouseTable",
+              "typeProperties": {
+                "schema": "RealTimeBusinessIndex",
+                "table": "Local_Business_Condition_Index"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "CanadaOpenDataWH",
+                "properties": {
+                  "type": "DataWarehouse",
+                  "typeProperties": {
+                    "artifactId": "de169c6b-89c2-4347-a9e0-6d745de4d395",
+                    "endpoint": "eqrolrmz5zeujbxet5y5gdzwdm-si5jfie76l7efdfytifm2gqebi.datawarehouse.fabric.microsoft.com",
+                    "workspaceId": "a0923a92-f29f-42fe-8cb8-9a0acd1a040a"
+                  },
+                  "annotations": []
+                }
+              },
+              "annotations": []
+            }
+          },
+          "translator": {
+            "type": "TabularTranslator",
+            "mappings": [
+              {
+                "source": {
+                  "name": "REF_DATE",
+                  "type": "Date",
+                  "physicalType": "date"
+                },
+                "sink": {
+                  "name": "REF_DATE (date)",
+                  "physicalType": "date"
+                }
+              },
+              {
+                "source": {
+                  "name": "GEO",
+                  "type": "String",
+                  "physicalType": "string"
+                },
+                "sink": {
+                  "name": "GEO",
+                  "physicalType": "varchar",
+                  "length": "8000"
+                }
+              },
+              {
+                "source": {
+                  "name": "DGUID",
+                  "type": "String",
+                  "physicalType": "string"
+                },
+                "sink": {
+                  "name": "DGUID",
+                  "physicalType": "varchar",
+                  "length": "8000"
+                }
+              },
+              {
+                "source": {
+                  "name": "UOM",
+                  "type": "String",
+                  "physicalType": "string"
+                },
+                "sink": {
+                  "name": "UOM",
+                  "physicalType": "varchar",
+                  "length": "8000"
+                }
+              },
+              {
+                "source": {
+                  "name": "UOM_ID",
+                  "type": "Int32",
+                  "physicalType": "integer"
+                },
+                "sink": {
+                  "name": "UOM_ID",
+                  "physicalType": "bigint"
+                }
+              },
+              {
+                "source": {
+                  "name": "SCALAR_FACTOR",
+                  "type": "String",
+                  "physicalType": "string"
+                },
+                "sink": {
+                  "name": "SCALAR_FACTOR",
+                  "physicalType": "varchar",
+                  "length": "8000"
+                }
+              },
+              {
+                "source": {
+                  "name": "SCALAR_ID",
+                  "type": "Int32",
+                  "physicalType": "integer"
+                },
+                "sink": {
+                  "name": "SCALAR_ID",
+                  "physicalType": "bigint"
+                }
+              },
+              {
+                "source": {
+                  "name": "VECTOR",
+                  "type": "String",
+                  "physicalType": "string"
+                },
+                "sink": {
+                  "name": "VECTOR",
+                  "physicalType": "varchar",
+                  "length": "8000"
+                }
+              },
+              {
+                "source": {
+                  "name": "COORDINATE",
+                  "type": "Int32",
+                  "physicalType": "integer"
+                },
+                "sink": {
+                  "name": "COORDINATE",
+                  "physicalType": "bigint"
+                }
+              },
+              {
+                "source": {
+                  "name": "VALUE",
+                  "type": "Double",
+                  "physicalType": "double"
+                },
+                "sink": {
+                  "name": "VALUE",
+                  "physicalType": "float"
+                }
+              },
+              {
+                "source": {
+                  "name": "STATUS",
+                  "type": "String",
+                  "physicalType": "string"
+                },
+                "sink": {
+                  "name": "STATUS",
+                  "physicalType": "varchar",
+                  "length": "8000"
+                }
+              },
+              {
+                "source": {
+                  "name": "SYMBOL",
+                  "type": "String",
+                  "physicalType": "string"
+                },
+                "sink": {
+                  "name": "SYMBOL",
+                  "physicalType": "varchar",
+                  "length": "8000"
+                }
+              },
+              {
+                "source": {
+                  "name": "TERMINATED",
+                  "type": "String",
+                  "physicalType": "string"
+                },
+                "sink": {
+                  "name": "TERMINATED",
+                  "physicalType": "varchar",
+                  "length": "8000"
+                }
+              },
+              {
+                "source": {
+                  "name": "DECIMALS",
+                  "type": "Int32",
+                  "physicalType": "integer"
+                },
+                "sink": {
+                  "name": "DECIMALS",
+                  "physicalType": "bigint"
+                }
+              }
+            ],
+            "typeConversion": true,
+            "typeConversionSettings": {
+              "allowDataTruncation": true,
+              "treatBooleanAsNumber": false
+            }
+          },
+          "enableStaging": true
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "Copy_Lakehouse_To_Warehouse",
+        "dependsOn": [
+          {
+            "activity": "Import_ZIP_CSV_To_Lake_House",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "TridentNotebook",
+        "typeProperties": {
+          "notebookId": "a8d76d56-c86d-91e6-4193-f5485816366a",
+          "workspaceId": "00000000-0000-0000-0000-000000000000"
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "Import_ZIP_CSV_To_Lake_House",
+        "dependsOn": []
+      }
+    ]
+  }
+}

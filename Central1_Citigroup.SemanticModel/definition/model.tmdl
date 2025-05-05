@@ -1,0 +1,24 @@
+model Model
+	culture: en-US
+	collation: Latin1_General_100_BIN2_UTF8
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBIDesktopVersion = 2.140.7525.1 (Main)+f63a344f9e090b82fbceba81dbe5d0be83564d27
+
+annotation PBI_QueryOrder = ["DatabaseQuery"]
+
+ref table CitiGroup_ProfitMargin
+ref table CitiGroup_NetIncomeTrends
+ref table CitiGroup_NetRevenues
+ref table CitiGroup_Expenses_Losses_Claims
+ref table CitiGroup_ProductRevenue
+ref table CitiGroup_GrossMargin
+
+ref cultureInfo en-US
+

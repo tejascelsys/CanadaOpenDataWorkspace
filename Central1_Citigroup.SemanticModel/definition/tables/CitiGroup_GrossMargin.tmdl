@@ -1,0 +1,71 @@
+table CitiGroup_GrossMargin
+	lineageTag: d0f4af28-303c-4564-b7ab-c28159b3080d
+	sourceLineageTag: [central1].[CitiGroup_GrossMargin]
+
+	column Year
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: b505669c-aaf2-42bf-84e4-3e2df6df1eee
+		sourceLineageTag: Year
+		summarizeBy: sum
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 5390f63e-8c42-4a75-8db4-1a85d329749c
+		sourceLineageTag: Quarter
+		summarizeBy: sum
+		sourceColumn: Quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column TotalRevenue
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 38f66a8f-36b1-40b2-9f8d-5946d9e05c3a
+		sourceLineageTag: TotalRevenue
+		summarizeBy: sum
+		sourceColumn: TotalRevenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column COGS
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 5b0595ea-64c7-4453-881d-349aeab38844
+		sourceLineageTag: COGS
+		summarizeBy: sum
+		sourceColumn: COGS
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column GrossMargin
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 7f2ba5aa-ac4f-4481-9771-a64784a6fedc
+		sourceLineageTag: GrossMargin
+		summarizeBy: sum
+		sourceColumn: GrossMargin
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition CitiGroup_GrossMargin = entity
+		mode: directLake
+		source
+			entityName: CitiGroup_GrossMargin
+			schemaName: central1
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

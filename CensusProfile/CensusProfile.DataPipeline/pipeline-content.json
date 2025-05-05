@@ -1,0 +1,363 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "type": "TridentNotebook",
+        "typeProperties": {
+          "notebookId": "a7931d18-442f-b46c-405e-60ad17e844b2",
+          "workspaceId": "00000000-0000-0000-0000-000000000000"
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "ImportToLake",
+        "dependsOn": []
+      },
+      {
+        "type": "Copy",
+        "typeProperties": {
+          "source": {
+            "type": "LakehouseTableSource",
+            "datasetSettings": {
+              "type": "LakehouseTable",
+              "typeProperties": {
+                "schema": "dbo",
+                "table": "2021_population"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "CensusProfile",
+                "properties": {
+                  "type": "Lakehouse",
+                  "typeProperties": {
+                    "artifactId": "6503e2ce-dc42-83b1-4754-0f8a7f1725d4",
+                    "workspaceId": "00000000-0000-0000-0000-000000000000",
+                    "rootFolder": "Tables"
+                  },
+                  "annotations": []
+                }
+              },
+              "annotations": []
+            }
+          },
+          "sink": {
+            "type": "DataWarehouseSink",
+            "tableOption": "autoCreate",
+            "allowCopyCommand": true,
+            "copyCommandSettings": {},
+            "datasetSettings": {
+              "type": "DataWarehouseTable",
+              "typeProperties": {
+                "schema": "census",
+                "table": "2021_population"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "CanadaOpenDataWH",
+                "properties": {
+                  "type": "DataWarehouse",
+                  "typeProperties": {
+                    "artifactId": "de169c6b-89c2-4347-a9e0-6d745de4d395",
+                    "endpoint": "eqrolrmz5zeujbxet5y5gdzwdm-si5jfie76l7efdfytifm2gqebi.datawarehouse.fabric.microsoft.com",
+                    "workspaceId": "a0923a92-f29f-42fe-8cb8-9a0acd1a040a"
+                  },
+                  "annotations": []
+                }
+              },
+              "annotations": []
+            }
+          },
+          "translator": {
+            "type": "TabularTranslator",
+            "mappings": [
+              {
+                "source": {
+                  "name": "CENSUS_YEAR",
+                  "type": "Int64",
+                  "physicalType": "long"
+                },
+                "sink": {
+                  "name": "CENSUS_YEAR",
+                  "physicalType": "bigint"
+                }
+              },
+              {
+                "source": {
+                  "name": "DGUID",
+                  "type": "String",
+                  "physicalType": "string"
+                },
+                "sink": {
+                  "name": "DGUID",
+                  "physicalType": "varchar",
+                  "length": "8000"
+                }
+              },
+              {
+                "source": {
+                  "name": "ALT_GEO_CODE",
+                  "type": "Int64",
+                  "physicalType": "long"
+                },
+                "sink": {
+                  "name": "ALT_GEO_CODE",
+                  "physicalType": "bigint"
+                }
+              },
+              {
+                "source": {
+                  "name": "GEO_LEVEL",
+                  "type": "String",
+                  "physicalType": "string"
+                },
+                "sink": {
+                  "name": "GEO_LEVEL",
+                  "physicalType": "varchar",
+                  "length": "8000"
+                }
+              },
+              {
+                "source": {
+                  "name": "GEO_NAME",
+                  "type": "String",
+                  "physicalType": "string"
+                },
+                "sink": {
+                  "name": "GEO_NAME",
+                  "physicalType": "varchar",
+                  "length": "8000"
+                }
+              },
+              {
+                "source": {
+                  "name": "TNR_SF",
+                  "type": "Double",
+                  "physicalType": "double"
+                },
+                "sink": {
+                  "name": "TNR_SF",
+                  "physicalType": "float"
+                }
+              },
+              {
+                "source": {
+                  "name": "TNR_LF",
+                  "type": "Double",
+                  "physicalType": "double"
+                },
+                "sink": {
+                  "name": "TNR_LF",
+                  "physicalType": "float"
+                }
+              },
+              {
+                "source": {
+                  "name": "DATA_QUALITY_FLAG",
+                  "type": "Int64",
+                  "physicalType": "long"
+                },
+                "sink": {
+                  "name": "DATA_QUALITY_FLAG",
+                  "physicalType": "bigint"
+                }
+              },
+              {
+                "source": {
+                  "name": "CHARACTERISTIC_ID",
+                  "type": "Int64",
+                  "physicalType": "long"
+                },
+                "sink": {
+                  "name": "CHARACTERISTIC_ID",
+                  "physicalType": "bigint"
+                }
+              },
+              {
+                "source": {
+                  "name": "CHARACTERISTIC_NAME",
+                  "type": "String",
+                  "physicalType": "string"
+                },
+                "sink": {
+                  "name": "CHARACTERISTIC_NAME",
+                  "physicalType": "varchar",
+                  "length": "8000"
+                }
+              },
+              {
+                "source": {
+                  "name": "CHARACTERISTIC_NOTE",
+                  "type": "Double",
+                  "physicalType": "double"
+                },
+                "sink": {
+                  "name": "CHARACTERISTIC_NOTE",
+                  "physicalType": "float"
+                }
+              },
+              {
+                "source": {
+                  "name": "C1_COUNT_TOTAL",
+                  "type": "Double",
+                  "physicalType": "double"
+                },
+                "sink": {
+                  "name": "C1_COUNT_TOTAL",
+                  "physicalType": "float"
+                }
+              },
+              {
+                "source": {
+                  "name": "SYMBOL",
+                  "type": "String",
+                  "physicalType": "string"
+                },
+                "sink": {
+                  "name": "SYMBOL",
+                  "physicalType": "varchar",
+                  "length": "8000"
+                }
+              },
+              {
+                "source": {
+                  "name": "C2_COUNT_MEN+",
+                  "type": "Double",
+                  "physicalType": "double"
+                },
+                "sink": {
+                  "name": "C2_COUNT_MEN+",
+                  "physicalType": "float"
+                }
+              },
+              {
+                "source": {
+                  "name": "SYMBOL.1",
+                  "type": "String",
+                  "physicalType": "string"
+                },
+                "sink": {
+                  "name": "SYMBOL.1",
+                  "physicalType": "varchar",
+                  "length": "8000"
+                }
+              },
+              {
+                "source": {
+                  "name": "C3_COUNT_WOMEN+",
+                  "type": "Double",
+                  "physicalType": "double"
+                },
+                "sink": {
+                  "name": "C3_COUNT_WOMEN+",
+                  "physicalType": "float"
+                }
+              },
+              {
+                "source": {
+                  "name": "SYMBOL.2",
+                  "type": "String",
+                  "physicalType": "string"
+                },
+                "sink": {
+                  "name": "SYMBOL.2",
+                  "physicalType": "varchar",
+                  "length": "8000"
+                }
+              },
+              {
+                "source": {
+                  "name": "C10_RATE_TOTAL",
+                  "type": "Double",
+                  "physicalType": "double"
+                },
+                "sink": {
+                  "name": "C10_RATE_TOTAL",
+                  "physicalType": "float"
+                }
+              },
+              {
+                "source": {
+                  "name": "SYMBOL.3",
+                  "type": "String",
+                  "physicalType": "string"
+                },
+                "sink": {
+                  "name": "SYMBOL.3",
+                  "physicalType": "varchar",
+                  "length": "8000"
+                }
+              },
+              {
+                "source": {
+                  "name": "C11_RATE_MEN+",
+                  "type": "Double",
+                  "physicalType": "double"
+                },
+                "sink": {
+                  "name": "C11_RATE_MEN+",
+                  "physicalType": "float"
+                }
+              },
+              {
+                "source": {
+                  "name": "SYMBOL.4",
+                  "type": "String",
+                  "physicalType": "string"
+                },
+                "sink": {
+                  "name": "SYMBOL.4",
+                  "physicalType": "varchar",
+                  "length": "8000"
+                }
+              },
+              {
+                "source": {
+                  "name": "C12_RATE_WOMEN+",
+                  "type": "Double",
+                  "physicalType": "double"
+                },
+                "sink": {
+                  "name": "C12_RATE_WOMEN+",
+                  "physicalType": "float"
+                }
+              },
+              {
+                "source": {
+                  "name": "SYMBOL.5",
+                  "type": "String",
+                  "physicalType": "string"
+                },
+                "sink": {
+                  "name": "SYMBOL.5",
+                  "physicalType": "varchar",
+                  "length": "8000"
+                }
+              }
+            ]
+          },
+          "enableStaging": true
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "Copy_iws",
+        "dependsOn": [
+          {
+            "activity": "ImportToLake",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

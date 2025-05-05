@@ -1,0 +1,47 @@
+table CitiGroup_NetIncomeTrends
+	lineageTag: 2145d17c-6478-4ed9-ab29-4c3b0242aa03
+	sourceLineageTag: [central1].[CitiGroup_NetIncomeTrends]
+
+	column Year
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 8dde9f4c-f1ba-4bfa-9924-5a5b9d812706
+		sourceLineageTag: Year
+		summarizeBy: sum
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 0e41564a-0fee-49f7-9047-ed17cb2c7281
+		sourceLineageTag: Quarter
+		summarizeBy: sum
+		sourceColumn: Quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column NetIncome
+		dataType: double
+		sourceProviderType: float
+		lineageTag: b43f3110-b120-44e1-b3b1-d46c7bcc6640
+		sourceLineageTag: NetIncome
+		summarizeBy: sum
+		sourceColumn: NetIncome
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition CitiGroup_NetIncomeTrends = entity
+		mode: directLake
+		source
+			entityName: CitiGroup_NetIncomeTrends
+			schemaName: central1
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

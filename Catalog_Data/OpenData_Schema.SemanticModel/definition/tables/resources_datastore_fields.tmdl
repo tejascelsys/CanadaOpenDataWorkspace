@@ -1,0 +1,133 @@
+table resources_datastore_fields
+	lineageTag: ca18dfcc-da93-4d17-8cc9-b1a802b9804e
+	sourceLineageTag: [dbo].[resources_datastore_fields]
+
+	column _link
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 77fb80e0-6308-4658-bd33-c722a8ba0edc
+		sourceLineageTag: _link
+		summarizeBy: none
+		sourceColumn: _link
+
+		annotation SummarizationSetBy = Automatic
+
+	column _link_resources
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 54331d29-1bf4-4d71-8697-d3f8651f1682
+		sourceLineageTag: _link_resources
+		summarizeBy: none
+		sourceColumn: _link_resources
+
+		annotation SummarizationSetBy = Automatic
+
+	column _link_main
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 0106619c-1588-4178-916c-8cd86fc2143e
+		sourceLineageTag: _link_main
+		summarizeBy: none
+		sourceColumn: _link_main
+
+		annotation SummarizationSetBy = Automatic
+
+	column id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e3e1ba5b-8322-4653-8053-2f172ac2d621
+		sourceLineageTag: id
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column type
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a5e3ff1e-66eb-4efc-be55-9c6257e03415
+		sourceLineageTag: type
+		summarizeBy: none
+		sourceColumn: type
+
+		annotation SummarizationSetBy = Automatic
+
+	column main_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 00180ca5-2b20-4b7e-b4f3-b21e6cfb3658
+		sourceLineageTag: main_id
+		summarizeBy: none
+		sourceColumn: main_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column resources_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b905fa63-cee8-43aa-8a6d-656fd88c162e
+		sourceLineageTag: resources_id
+		summarizeBy: none
+		sourceColumn: resources_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column info_label_en
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e4ae2a9b-dff8-4cc5-9c35-ebc6ed64b001
+		sourceLineageTag: info_label_en
+		summarizeBy: none
+		sourceColumn: info_label_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column info_label_fr
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b6a31b71-a61c-4f37-89f3-5a5d708b1710
+		sourceLineageTag: info_label_fr
+		summarizeBy: none
+		sourceColumn: info_label_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column info_notes_en
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 0c7680d8-e587-46f5-a44e-d473b1d6aa03
+		sourceLineageTag: info_notes_en
+		summarizeBy: none
+		sourceColumn: info_notes_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column info_notes_fr
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 261e4751-6943-4ddd-b9b6-0fb5d12d17a8
+		sourceLineageTag: info_notes_fr
+		summarizeBy: none
+		sourceColumn: info_notes_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column info_type_override
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 45d85594-cfc2-491b-b1e3-e00eb2f5766f
+		sourceLineageTag: info_type_override
+		summarizeBy: none
+		sourceColumn: info_type_override
+
+		annotation SummarizationSetBy = Automatic
+
+	partition resources_datastore_fields = entity
+		mode: directLake
+		source
+			entityName: resources_datastore_fields
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

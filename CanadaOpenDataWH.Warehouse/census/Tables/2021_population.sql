@@ -1,0 +1,26 @@
+CREATE TABLE [census].[2021_population] (
+
+	[CENSUS_YEAR] bigint NULL, 
+	[DGUID] varchar(8000) NULL, 
+	[ALT_GEO_CODE] bigint NULL, 
+	[GEO_LEVEL] varchar(8000) NULL, 
+	[GEO_NAME] varchar(8000) NULL, 
+	[TNR_SF] float NULL, 
+	[TNR_LF] float NULL, 
+	[DATA_QUALITY_FLAG] bigint NULL, 
+	[CHARACTERISTIC_ID] bigint NULL, 
+	[CHARACTERISTIC_NAME] varchar(8000) NULL, 
+	[CHARACTERISTIC_NOTE] float NULL, 
+	[C1_COUNT_TOTAL] float NULL, 
+	[SYMBOL] varchar(8000) NULL, 
+	[C2_COUNT_MEN+] float NULL, 
+	[SYMBOL.1] varchar(8000) NULL, 
+	[C3_COUNT_WOMEN+] float NULL, 
+	[SYMBOL.2] varchar(8000) NULL, 
+	[C10_RATE_TOTAL] float NULL, 
+	[SYMBOL.3] varchar(8000) NULL, 
+	[C11_RATE_MEN+] float NULL, 
+	[SYMBOL.4] varchar(8000) NULL, 
+	[C12_RATE_WOMEN+] float NULL, 
+	[SYMBOL.5] varchar(8000) NULL
+);

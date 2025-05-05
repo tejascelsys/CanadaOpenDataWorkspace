@@ -1,0 +1,76 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.60\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "d25fc3ba79d81a129bd8",
+      "config": "{}",
+      "name": "6caa692833cec34292df"
+    }
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "d25fc3ba79d81a129bd8",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"8578ca1c886ee1f53da3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":58.80229696472518,\"y\":9.450369155045118,\"z\":0,\"width\":347.5635767022149,\"height\":81.90319934372437,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"expenditure_based.GEO\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"expenditure_based\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"GEO\"},\"Name\":\"expenditure_based.GEO\",\"NativeReferenceName\":\"GEO\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Provincial and territorial '\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}},\"outlineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"4D\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"padding\":{\"expr\":{\"Literal\":{\"Value\":\"4D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"expenditure_based\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"GEO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Northwest Territories'\"}}]]}}}]}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 81.90,
+          "width": 347.56,
+          "x": 58.80,
+          "y": 9.45,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"9722a2fd8d001e050147\",\"layouts\":[{\"id\":0,\"position\":{\"x\":19.950779327317473,\"y\":113.40442986054143,\"z\":3000,\"width\":1202.2969647251846,\"height\":589.073010664479,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"lineClusteredColumnComboChart\",\"projections\":{\"Category\":[{\"queryRef\":\"expenditure_based.REF_DATE\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(expenditure_based.VALUE)\"}],\"Y2\":[{\"queryRef\":\"Avg(expenditure_based.VALUE)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"expenditure_based\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"REF_DATE\"},\"Name\":\"expenditure_based.REF_DATE\",\"NativeReferenceName\":\"Year\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"VALUE\"}},\"Function\":0},\"Name\":\"Sum(expenditure_based.VALUE)\",\"NativeReferenceName\":\"Sum of VALUE\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"VALUE\"}},\"Function\":1},\"Name\":\"Avg(expenditure_based.VALUE)\",\"NativeReferenceName\":\"Average of VALUE\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"VALUE\"}},\"Function\":0}}}]},\"columnProperties\":{\"expenditure_based.REF_DATE\":{\"displayName\":\"Year\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 589.07,
+          "width": 1202.30,
+          "x": 19.95,
+          "y": 113.40,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"c4a13bbe27f5523af271\",\"layouts\":[{\"id\":0,\"position\":{\"x\":464.11812961443803,\"y\":11.55045118949959,\"z\":1000,\"width\":372.7645611156686,\"height\":79.8031173092699,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"expenditure_based.Estimates\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"expenditure_based\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Estimates\"},\"Name\":\"expenditure_based.Estimates\",\"NativeReferenceName\":\"Estimates\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"expenditure_based\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Estimates\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Business gross fixed capital formation'\"}}]]}}}]}}}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}},\"outlineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"4D\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}}}}],\"items\":[{\"properties\":{\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 79.80,
+          "width": 372.76,
+          "x": 464.12,
+          "y": 11.55,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"f72954e280a6e3a5685c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":927.1862182116488,\"y\":7.3502871205906475,\"z\":2000,\"width\":206,\"height\":168.00656275635765,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"expenditure_based.REF_DATE\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"expenditure_based\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"REF_DATE\"},\"Name\":\"expenditure_based.REF_DATE\",\"NativeReferenceName\":\"REF_DATE\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Year'\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}},\"outlineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"4D\"}}}}}],\"general\":[{\"properties\":{}}],\"numericInputStyle\":[{\"properties\":{\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 168.01,
+          "width": 206.00,
+          "x": 927.19,
+          "y": 7.35,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

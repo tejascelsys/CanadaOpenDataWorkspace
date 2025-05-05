@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Lakehouse",
+    "displayName": "MunicipalFinancialDataLH"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "548fd5e2-01ba-8e53-4fff-83f678c29da6"
+  }
+}

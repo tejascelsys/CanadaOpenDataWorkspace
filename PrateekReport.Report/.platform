@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "PrateekReport"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e4924cd5-e249-898e-4233-ecfe4f86bf33"
+  }
+}

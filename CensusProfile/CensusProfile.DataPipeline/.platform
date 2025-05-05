@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataPipeline",
+    "displayName": "CensusProfile"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "f15b2198-d7bf-b359-49ba-7e8e935ddbe4"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Central1_Citigroup"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "4db7dbcf-f923-aec8-4cf1-597f2794dabd"
+  }
+}

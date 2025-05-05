@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Lakehouse",
+    "displayName": "Real_Time_Local_Business_Index_LH"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "255d9954-5ebf-9357-4a02-1ed69657e88e"
+  }
+}

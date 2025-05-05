@@ -1,0 +1,580 @@
+table resources
+	lineageTag: 0e520f8d-0e69-4280-95ed-4c75caa3842c
+	sourceLineageTag: [dbo].[resources]
+
+	column _link
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c82aca03-6362-49b3-ada6-de2f84acd0ed
+		sourceLineageTag: _link
+		summarizeBy: none
+		sourceColumn: _link
+
+		annotation SummarizationSetBy = Automatic
+
+	column _link_main
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ca560d59-1d1c-4564-8f49-921b4ac1b91c
+		sourceLineageTag: _link_main
+		summarizeBy: none
+		sourceColumn: _link_main
+
+		annotation SummarizationSetBy = Automatic
+
+	column cache_last_updated
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 4fc02567-c86b-4bc4-8fd2-99cf479ad61c
+		sourceLineageTag: cache_last_updated
+		summarizeBy: sum
+		sourceColumn: cache_last_updated
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column cache_url
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 2c74f477-6c53-4123-8d8f-b2201a92c06e
+		sourceLineageTag: cache_url
+		summarizeBy: sum
+		sourceColumn: cache_url
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column created
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f8b60421-43b7-4f96-ac9b-90425259efb1
+		sourceLineageTag: created
+		summarizeBy: none
+		sourceColumn: created
+
+		annotation SummarizationSetBy = Automatic
+
+	column url_type
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c3aeca35-75d5-4ec7-9e8d-182c237e1325
+		sourceLineageTag: url_type
+		summarizeBy: none
+		sourceColumn: url_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column datastore_active
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		sourceProviderType: bit
+		lineageTag: c239c122-1207-4dca-98bf-d242c3c8d997
+		sourceLineageTag: datastore_active
+		summarizeBy: none
+		sourceColumn: datastore_active
+
+		annotation SummarizationSetBy = Automatic
+
+	column description
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 08cb0a2e-4c51-4ca9-8b8d-97fd53dc2eb7
+		sourceLineageTag: description
+		summarizeBy: sum
+		sourceColumn: description
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column format
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b8c02ea6-5b8f-4b9f-9273-fbcec3b8f81e
+		sourceLineageTag: format
+		summarizeBy: none
+		sourceColumn: format
+
+		annotation SummarizationSetBy = Automatic
+
+	column hash
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c47ce5a7-05c7-4005-9cf7-c6a81422ca39
+		sourceLineageTag: hash
+		summarizeBy: none
+		sourceColumn: hash
+
+		annotation SummarizationSetBy = Automatic
+
+	column id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 777c96a3-1a3c-4369-a030-81c7501ca530
+		sourceLineageTag: id
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column language
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 10ae8dfd-405e-4948-8f13-298b0ec34cbc
+		sourceLineageTag: language
+		summarizeBy: none
+		sourceColumn: language
+
+		annotation SummarizationSetBy = Automatic
+
+	column last_modified
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e193f2fe-b259-4162-96d7-7882a1edb7c4
+		sourceLineageTag: last_modified
+		summarizeBy: none
+		sourceColumn: last_modified
+
+		annotation SummarizationSetBy = Automatic
+
+	column metadata_modified
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f1ac2fc7-4e76-4041-bfa8-6f496a429b90
+		sourceLineageTag: metadata_modified
+		summarizeBy: none
+		sourceColumn: metadata_modified
+
+		annotation SummarizationSetBy = Automatic
+
+	column mimetype
+		dataType: double
+		sourceProviderType: float
+		lineageTag: b776f767-ed6d-47ba-83c0-a4acb7b3716a
+		sourceLineageTag: mimetype
+		summarizeBy: sum
+		sourceColumn: mimetype
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column mimetype_inner
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 8a51dc81-c4be-487a-a309-ab5fa105bdf2
+		sourceLineageTag: mimetype_inner
+		summarizeBy: sum
+		sourceColumn: mimetype_inner
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column name
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 661cdcd3-77fd-4733-964b-562f2977aad1
+		sourceLineageTag: name
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	column url
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 799d05d6-5d65-4c82-b98e-3c077cb3df50
+		sourceLineageTag: url
+		summarizeBy: none
+		sourceColumn: url
+
+		annotation SummarizationSetBy = Automatic
+
+	column package_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a178a185-c4ca-4294-99a6-49f5e9cd1c9c
+		sourceLineageTag: package_id
+		summarizeBy: none
+		sourceColumn: package_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column position
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: a5261386-e7e8-4cb1-bf6b-7c47c4cc738a
+		sourceLineageTag: position
+		summarizeBy: sum
+		sourceColumn: position
+
+		annotation SummarizationSetBy = Automatic
+
+	column resource_type
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2e8d7ccf-d438-4eb5-97f1-488e543ddb39
+		sourceLineageTag: resource_type
+		summarizeBy: none
+		sourceColumn: resource_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column state
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ea8b9fbe-afad-4a24-af32-eab172cdab5d
+		sourceLineageTag: state
+		summarizeBy: none
+		sourceColumn: state
+
+		annotation SummarizationSetBy = Automatic
+
+	column name_translated_en
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 60f68010-d3e4-426c-ba4a-0eb3de3c751a
+		sourceLineageTag: name_translated_en
+		summarizeBy: none
+		sourceColumn: name_translated_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column name_translated_fr
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a1b7ae39-d29f-4878-8775-8ab898fef364
+		sourceLineageTag: name_translated_fr
+		summarizeBy: none
+		sourceColumn: name_translated_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column main_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ab018332-920b-45fb-a0db-23553b6f0a9b
+		sourceLineageTag: main_id
+		summarizeBy: none
+		sourceColumn: main_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column name_translated_en-t-fr
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1a6806be-6007-4707-881b-0887d19da013
+		sourceLineageTag: name_translated_en-t-fr
+		summarizeBy: none
+		sourceColumn: name_translated_en-t-fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column revision_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3e53196c-a418-4cbe-a867-f4334678fb92
+		sourceLineageTag: revision_id
+		summarizeBy: none
+		sourceColumn: revision_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column size
+		dataType: double
+		sourceProviderType: float
+		lineageTag: ce0f0151-1c6f-49d2-a884-e0a153c285e2
+		sourceLineageTag: size
+		summarizeBy: sum
+		sourceColumn: size
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column name_translated_fr-t-en
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 7ccb7c24-df1a-458c-b217-3261e66d52b2
+		sourceLineageTag: name_translated_fr-t-en
+		summarizeBy: none
+		sourceColumn: name_translated_fr-t-en
+
+		annotation SummarizationSetBy = Automatic
+
+	column resource_group_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 99d551d5-78e0-4344-8a14-3149fdaf9f5b
+		sourceLineageTag: resource_group_id
+		summarizeBy: none
+		sourceColumn: resource_group_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column character_set
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 729b34a6-ada1-42aa-a1e2-e5ae6b8221b8
+		sourceLineageTag: character_set
+		summarizeBy: none
+		sourceColumn: character_set
+
+		annotation SummarizationSetBy = Automatic
+
+	column validation_timestamp
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8b89db43-47be-4515-80f1-9a79f57c13e7
+		sourceLineageTag: validation_timestamp
+		summarizeBy: none
+		sourceColumn: validation_timestamp
+
+		annotation SummarizationSetBy = Automatic
+
+	column datastore_contains_all_records_of_source_file
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		sourceProviderType: bit
+		lineageTag: 93f3a163-ae92-46da-8f71-35a618674284
+		sourceLineageTag: datastore_contains_all_records_of_source_file
+		summarizeBy: none
+		sourceColumn: datastore_contains_all_records_of_source_file
+
+		annotation SummarizationSetBy = Automatic
+
+	column date_published
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e0f32e12-d9c2-4c85-b100-83787c683686
+		sourceLineageTag: date_published
+		summarizeBy: none
+		sourceColumn: date_published
+
+		annotation SummarizationSetBy = Automatic
+
+	column validation_status
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 95223377-75c8-4f5e-b9b7-54be7746f13a
+		sourceLineageTag: validation_status
+		summarizeBy: none
+		sourceColumn: validation_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column unique_identifier
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a8596465-3116-4d39-911e-141bc5d8c91e
+		sourceLineageTag: unique_identifier
+		summarizeBy: none
+		sourceColumn: unique_identifier
+
+		annotation SummarizationSetBy = Automatic
+
+	column related_relationship
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f992630a-d3d9-46a6-bb5b-c0ef070a8796
+		sourceLineageTag: related_relationship
+		summarizeBy: none
+		sourceColumn: related_relationship
+
+		annotation SummarizationSetBy = Automatic
+
+	column related_type
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a4f24ceb-3b85-4efb-aca3-ccabc2c8ecfc
+		sourceLineageTag: related_type
+		summarizeBy: none
+		sourceColumn: related_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_quality
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 60ba5cc5-df6e-427d-98c5-cb13292aa4a9
+		sourceLineageTag: data_quality
+		summarizeBy: none
+		sourceColumn: data_quality
+
+		annotation SummarizationSetBy = Automatic
+
+	column ckan_url
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f997dc11-b8b9-40be-835d-29e63ad503da
+		sourceLineageTag: ckan_url
+		summarizeBy: none
+		sourceColumn: ckan_url
+
+		annotation SummarizationSetBy = Automatic
+
+	column ignore_hash
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		sourceProviderType: bit
+		lineageTag: 0a5d6abb-2ea4-4d11-b743-0572dd01e3ee
+		sourceLineageTag: ignore_hash
+		summarizeBy: none
+		sourceColumn: ignore_hash
+
+		annotation SummarizationSetBy = Automatic
+
+	column original_url
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 592a159e-ae9e-494f-af2a-b0edd94cab63
+		sourceLineageTag: original_url
+		summarizeBy: none
+		sourceColumn: original_url
+
+		annotation SummarizationSetBy = Automatic
+
+	column resource_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 13865871-7fba-4809-9096-651cb77ea5e2
+		sourceLineageTag: resource_id
+		summarizeBy: none
+		sourceColumn: resource_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column set_url_type
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		sourceProviderType: bit
+		lineageTag: 3ad8ede1-3f7e-4580-8eea-3fe8dc922224
+		sourceLineageTag: set_url_type
+		summarizeBy: none
+		sourceColumn: set_url_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column task_created
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f5f25b6b-3220-4ef9-b194-d2d0228b2583
+		sourceLineageTag: task_created
+		summarizeBy: none
+		sourceColumn: task_created
+
+		annotation SummarizationSetBy = Automatic
+
+	column validation_options_row_limit
+		dataType: double
+		sourceProviderType: float
+		lineageTag: bb99226e-a2ed-4c6d-8570-d8aa9d37dbb0
+		sourceLineageTag: validation_options_row_limit
+		summarizeBy: sum
+		sourceColumn: validation_options_row_limit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column resource_date_published
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f82c717d-4dd8-46ed-af54-a95f49a66221
+		sourceLineageTag: resource_date_published
+		summarizeBy: none
+		sourceColumn: resource_date_published
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_includes_links
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 38fa92e8-689b-4d53-95bc-93623149ddf4
+		sourceLineageTag: data_includes_links
+		summarizeBy: sum
+		sourceColumn: data_includes_links
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column aafc_resource_metadata_schema
+		dataType: double
+		sourceProviderType: float
+		lineageTag: df55f006-9b12-4438-b336-186a05f2e524
+		sourceLineageTag: aafc_resource_metadata_schema
+		summarizeBy: sum
+		sourceColumn: aafc_resource_metadata_schema
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column data_includes_uris
+		dataType: double
+		sourceProviderType: float
+		lineageTag: c18c3068-64d5-43dd-9e2c-7ad12e6fdbf9
+		sourceLineageTag: data_includes_uris
+		summarizeBy: sum
+		sourceColumn: data_includes_uris
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column validation_options_delimiter
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5c0efc37-d99d-42cd-8bad-40bcdff4cde4
+		sourceLineageTag: validation_options_delimiter
+		summarizeBy: none
+		sourceColumn: validation_options_delimiter
+
+		annotation SummarizationSetBy = Automatic
+
+	column validation_options_headers
+		dataType: double
+		sourceProviderType: float
+		lineageTag: afa3b830-3c4a-47b5-b0c5-3f81f750462c
+		sourceLineageTag: validation_options_headers
+		summarizeBy: sum
+		sourceColumn: validation_options_headers
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column validation_options_skip_checks
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: df2c2dc0-76ea-4c12-99e3-a3398c271387
+		sourceLineageTag: validation_options_skip_checks
+		summarizeBy: none
+		sourceColumn: validation_options_skip_checks
+
+		annotation SummarizationSetBy = Automatic
+
+	column validation_options_skip_rows
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f5f67776-77a3-42af-8ede-fbb662bbcbd3
+		sourceLineageTag: validation_options_skip_rows
+		summarizeBy: none
+		sourceColumn: validation_options_skip_rows
+
+		annotation SummarizationSetBy = Automatic
+
+	partition resources = entity
+		mode: directLake
+		source
+			entityName: resources
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

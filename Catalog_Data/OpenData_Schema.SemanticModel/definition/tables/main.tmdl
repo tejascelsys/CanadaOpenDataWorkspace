@@ -1,0 +1,990 @@
+table main
+	lineageTag: f03690c0-d917-4c65-ae1b-81241ab44eb9
+	sourceLineageTag: [dbo].[main]
+
+	column _link
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 62cd32bd-71f5-456f-b382-1cd5cb5d5794
+		sourceLineageTag: _link
+		summarizeBy: none
+		sourceColumn: _link
+
+		annotation SummarizationSetBy = Automatic
+
+	column id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 9d36ca7d-0f80-4861-9773-30c2d90f4929
+		sourceLineageTag: id
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column title_translated_en
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c33e8a57-eaa8-46f9-aa85-3e1e5a4917f1
+		sourceLineageTag: title_translated_en
+		summarizeBy: none
+		sourceColumn: title_translated_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column title_translated_fr
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 9985fe84-f784-4cef-9f1f-a0d243302bba
+		sourceLineageTag: title_translated_fr
+		summarizeBy: none
+		sourceColumn: title_translated_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column title_translated_fr-t-en
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b347c18f-6dad-4e66-9336-a2939251f1f8
+		sourceLineageTag: title_translated_fr-t-en
+		summarizeBy: none
+		sourceColumn: title_translated_fr-t-en
+
+		annotation SummarizationSetBy = Automatic
+
+	column title_translated_en-t-fr
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f4ff9ead-b99e-4c6f-8605-679541d455da
+		sourceLineageTag: title_translated_en-t-fr
+		summarizeBy: none
+		sourceColumn: title_translated_en-t-fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column notes_translated_en
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 43cd3bb9-fdc6-4fa5-867d-4697fe038461
+		sourceLineageTag: notes_translated_en
+		summarizeBy: none
+		sourceColumn: notes_translated_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column notes_translated_fr
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3d0e6671-1378-4b22-9496-03c17223f022
+		sourceLineageTag: notes_translated_fr
+		summarizeBy: none
+		sourceColumn: notes_translated_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column notes_translated_fr-t-en
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 6df37483-5cec-4d58-8d19-7a2c952fb728
+		sourceLineageTag: notes_translated_fr-t-en
+		summarizeBy: none
+		sourceColumn: notes_translated_fr-t-en
+
+		annotation SummarizationSetBy = Automatic
+
+	column notes_translated_en-t-fr
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ca1bac6f-c751-4664-b7c8-30c57dbe8990
+		sourceLineageTag: notes_translated_en-t-fr
+		summarizeBy: none
+		sourceColumn: notes_translated_en-t-fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column date_created
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: bb504e51-2a28-4d70-b6cb-2be2ecf9eb9d
+		sourceLineageTag: date_created
+		summarizeBy: none
+		sourceColumn: date_created
+
+		annotation SummarizationSetBy = Automatic
+
+	column org_title_at_publication_en
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 9dde0541-bc9d-44ea-8a23-7db28de4a43a
+		sourceLineageTag: org_title_at_publication_en
+		summarizeBy: none
+		sourceColumn: org_title_at_publication_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column org_title_at_publication_fr
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2a760470-485e-4196-82e4-fb92cb9b0013
+		sourceLineageTag: org_title_at_publication_fr
+		summarizeBy: none
+		sourceColumn: org_title_at_publication_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column organization_created
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 44cc6809-a620-4386-83e9-f2c8d4b6a3be
+		sourceLineageTag: organization_created
+		summarizeBy: none
+		sourceColumn: organization_created
+
+		annotation SummarizationSetBy = Automatic
+
+	column organization_description
+		dataType: double
+		sourceProviderType: float
+		lineageTag: e4c2a242-d171-424a-a4ec-225abc01c107
+		sourceLineageTag: organization_description
+		summarizeBy: sum
+		sourceColumn: organization_description
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column organization_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 65c66e06-be60-4f50-b72f-91383a27a1a5
+		sourceLineageTag: organization_id
+		summarizeBy: none
+		sourceColumn: organization_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column organization_name
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 404cd8ea-928e-4c08-9c5b-d95ca351ba0f
+		sourceLineageTag: organization_name
+		summarizeBy: none
+		sourceColumn: organization_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column organization_title
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8d5c820c-8a79-442a-b747-bcff11f6b5b7
+		sourceLineageTag: organization_title
+		summarizeBy: none
+		sourceColumn: organization_title
+
+		annotation SummarizationSetBy = Automatic
+
+	column organization_type
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: af46dde2-f088-49ee-91ca-9d83df5f8aa2
+		sourceLineageTag: organization_type
+		summarizeBy: none
+		sourceColumn: organization_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column keywords_en
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: de56cd40-a8c6-4c87-925d-47dd40446cde
+		sourceLineageTag: keywords_en
+		summarizeBy: none
+		sourceColumn: keywords_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column keywords_fr
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3a2265ef-1e4e-40b9-9916-461ef7f7ee2b
+		sourceLineageTag: keywords_fr
+		summarizeBy: none
+		sourceColumn: keywords_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column keywords_en-t-fr
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f98cc542-db19-4ee0-88b9-93b85b51aa76
+		sourceLineageTag: keywords_en-t-fr
+		summarizeBy: none
+		sourceColumn: keywords_en-t-fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column keywords_fr-t-en
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 341ec2cd-0c63-4ac8-9ddd-d0bc3340d4c3
+		sourceLineageTag: keywords_fr-t-en
+		summarizeBy: none
+		sourceColumn: keywords_fr-t-en
+
+		annotation SummarizationSetBy = Automatic
+
+	column aggregate_identifier
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ef7782d7-2b1e-4a0d-859a-6318cdd2042d
+		sourceLineageTag: aggregate_identifier
+		summarizeBy: none
+		sourceColumn: aggregate_identifier
+
+		annotation SummarizationSetBy = Automatic
+
+	column url
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ccb6be2c-72f9-4db5-8a00-9577502af46a
+		sourceLineageTag: url
+		summarizeBy: none
+		sourceColumn: url
+
+		annotation SummarizationSetBy = Automatic
+
+	column author
+		dataType: double
+		sourceProviderType: float
+		lineageTag: f93b056e-c3da-4137-856d-3f2b720eec49
+		sourceLineageTag: author
+		summarizeBy: sum
+		sourceColumn: author
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column author_email
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 73ea0640-9b0d-4fc1-a3ae-cadb6ef9c245
+		sourceLineageTag: author_email
+		summarizeBy: none
+		sourceColumn: author_email
+
+		annotation SummarizationSetBy = Automatic
+
+	column collection
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2fb89abd-1aa2-4b69-b907-a10bb1d910ae
+		sourceLineageTag: collection
+		summarizeBy: none
+		sourceColumn: collection
+
+		annotation SummarizationSetBy = Automatic
+
+	column contact_information
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8d92d5fc-9162-40ac-a875-8806da9de597
+		sourceLineageTag: contact_information
+		summarizeBy: none
+		sourceColumn: contact_information
+
+		annotation SummarizationSetBy = Automatic
+
+	column subject
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 4a5557bb-4c4a-4c69-96be-ab4ebdcf0a98
+		sourceLineageTag: subject
+		summarizeBy: none
+		sourceColumn: subject
+
+		annotation SummarizationSetBy = Automatic
+
+	column creator
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: fab833cb-c082-4955-9f31-dbb52265f527
+		sourceLineageTag: creator
+		summarizeBy: none
+		sourceColumn: creator
+
+		annotation SummarizationSetBy = Automatic
+
+	column status
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b9b83e02-b0d8-4c68-8834-c70e758cab73
+		sourceLineageTag: status
+		summarizeBy: none
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	column date_modified
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 23d3500d-bb37-446d-ad96-e42f2e1479db
+		sourceLineageTag: date_modified
+		summarizeBy: none
+		sourceColumn: date_modified
+
+		annotation SummarizationSetBy = Automatic
+
+	column date_published
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3776b825-4659-44aa-aff6-619949d5dd92
+		sourceLineageTag: date_published
+		summarizeBy: none
+		sourceColumn: date_published
+
+		annotation SummarizationSetBy = Automatic
+
+	column display_flags
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: d8f70be8-5223-4210-8fc3-21e46fbe2648
+		sourceLineageTag: display_flags
+		summarizeBy: none
+		sourceColumn: display_flags
+
+		annotation SummarizationSetBy = Automatic
+
+	column distributor
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3406a3fe-b3e0-4476-9449-c7b3950f50c5
+		sourceLineageTag: distributor
+		summarizeBy: none
+		sourceColumn: distributor
+
+		annotation SummarizationSetBy = Automatic
+
+	column file_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1a69c037-7cda-4562-8642-9a8d543279a5
+		sourceLineageTag: file_id
+		summarizeBy: none
+		sourceColumn: file_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column frequency
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 745c9387-af9f-4dea-93d3-f6b25fcb8632
+		sourceLineageTag: frequency
+		summarizeBy: none
+		sourceColumn: frequency
+
+		annotation SummarizationSetBy = Automatic
+
+	column type
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 30d554f7-1e19-45fe-8e77-c5b746d0cc6b
+		sourceLineageTag: type
+		summarizeBy: none
+		sourceColumn: type
+
+		annotation SummarizationSetBy = Automatic
+
+	column topic_category
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 434c1f2c-d6cc-43a3-b343-544de8c3b812
+		sourceLineageTag: topic_category
+		summarizeBy: none
+		sourceColumn: topic_category
+
+		annotation SummarizationSetBy = Automatic
+
+	column hierarchy_level
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5c873644-89c5-46d2-afd9-65b39f7bacb3
+		sourceLineageTag: hierarchy_level
+		summarizeBy: none
+		sourceColumn: hierarchy_level
+
+		annotation SummarizationSetBy = Automatic
+
+	column jurisdiction
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: d8d321f5-b7a6-43dc-a27c-c827396ca3d2
+		sourceLineageTag: jurisdiction
+		summarizeBy: none
+		sourceColumn: jurisdiction
+
+		annotation SummarizationSetBy = Automatic
+
+	column spatial_representation_type
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8d721c88-23e1-4e10-ae26-738560288cd1
+		sourceLineageTag: spatial_representation_type
+		summarizeBy: none
+		sourceColumn: spatial_representation_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column license_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c9a10c33-6b79-4a44-bcdb-8504db031bb7
+		sourceLineageTag: license_id
+		summarizeBy: none
+		sourceColumn: license_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column license_title
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1589b55d-8c08-4f16-8acd-465b11c69176
+		sourceLineageTag: license_title
+		summarizeBy: none
+		sourceColumn: license_title
+
+		annotation SummarizationSetBy = Automatic
+
+	column license_url
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a17ec1b7-b94e-40dd-946e-a5be56b893c0
+		sourceLineageTag: license_url
+		summarizeBy: none
+		sourceColumn: license_url
+
+		annotation SummarizationSetBy = Automatic
+
+	column maintainer
+		dataType: double
+		sourceProviderType: float
+		lineageTag: c1eeebd1-ffd1-4b66-87f9-ac6674be64ea
+		sourceLineageTag: maintainer
+		summarizeBy: sum
+		sourceColumn: maintainer
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column spatial
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: bc23304f-f17a-416f-ba05-bceac71e8e5b
+		sourceLineageTag: spatial
+		summarizeBy: none
+		sourceColumn: spatial
+
+		annotation SummarizationSetBy = Automatic
+
+	column maintainer_email
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c09b54b6-413e-4e91-bcfd-46bb702ef202
+		sourceLineageTag: maintainer_email
+		summarizeBy: none
+		sourceColumn: maintainer_email
+
+		annotation SummarizationSetBy = Automatic
+
+	column restrictions
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1fe0a0c3-0840-4fd5-b9a6-8a55332566cd
+		sourceLineageTag: restrictions
+		summarizeBy: none
+		sourceColumn: restrictions
+
+		annotation SummarizationSetBy = Automatic
+
+	column metadata_created
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f446702d-613b-4e12-bc2d-07f603343f48
+		sourceLineageTag: metadata_created
+		summarizeBy: none
+		sourceColumn: metadata_created
+
+		annotation SummarizationSetBy = Automatic
+
+	column metadata_modified
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: d0312199-68a4-4645-b003-f4f5b808cb84
+		sourceLineageTag: metadata_modified
+		summarizeBy: none
+		sourceColumn: metadata_modified
+
+		annotation SummarizationSetBy = Automatic
+
+	column responsible_role
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2ac43ccb-ae25-45f1-9768-c8931a840f14
+		sourceLineageTag: responsible_role
+		summarizeBy: none
+		sourceColumn: responsible_role
+
+		annotation SummarizationSetBy = Automatic
+
+	column num_resources
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 16db2764-4ab5-426f-9b36-acfa92cdcb72
+		sourceLineageTag: num_resources
+		summarizeBy: sum
+		sourceColumn: num_resources
+
+		annotation SummarizationSetBy = Automatic
+
+	column time_period_coverage_end
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: fbb74120-85c2-4639-8f67-138f1d113b2f
+		sourceLineageTag: time_period_coverage_end
+		summarizeBy: none
+		sourceColumn: time_period_coverage_end
+
+		annotation SummarizationSetBy = Automatic
+
+	column time_period_coverage_start
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: d2ffe421-ba77-4726-848b-0531e8c28af0
+		sourceLineageTag: time_period_coverage_start
+		summarizeBy: none
+		sourceColumn: time_period_coverage_start
+
+		annotation SummarizationSetBy = Automatic
+
+	column reference_system_information
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 988bbbf8-04e5-466e-b6ff-45aafe7ca5a5
+		sourceLineageTag: reference_system_information
+		summarizeBy: none
+		sourceColumn: reference_system_information
+
+		annotation SummarizationSetBy = Automatic
+
+	column metadata_contact_en
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 62650532-ab56-4821-a30f-57d1df8e1b88
+		sourceLineageTag: metadata_contact_en
+		summarizeBy: none
+		sourceColumn: metadata_contact_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column metadata_contact_fr
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 0999e1b6-2dc5-4d50-b9f4-beaa09d22c39
+		sourceLineageTag: metadata_contact_fr
+		summarizeBy: none
+		sourceColumn: metadata_contact_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column metadata_contact_fr_en
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 50248239-f08b-4cce-aebe-4fa19dde383c
+		sourceLineageTag: metadata_contact_fr_en
+		summarizeBy: none
+		sourceColumn: metadata_contact_fr_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column metadata_contact_fr_fr
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 6286b905-388a-4010-b997-e6863dee205d
+		sourceLineageTag: metadata_contact_fr_fr
+		summarizeBy: none
+		sourceColumn: metadata_contact_fr_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column position_name_en
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 26a8b2a4-81b9-4e46-ac19-8591926ea886
+		sourceLineageTag: position_name_en
+		summarizeBy: none
+		sourceColumn: position_name_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column position_name_fr
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 9ba481ae-b009-406e-a584-7d32cee58242
+		sourceLineageTag: position_name_fr
+		summarizeBy: none
+		sourceColumn: position_name_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column digital_object_identifier
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 6b3b1f38-b39d-4ab6-9b03-9821a8aab673
+		sourceLineageTag: digital_object_identifier
+		summarizeBy: none
+		sourceColumn: digital_object_identifier
+
+		annotation SummarizationSetBy = Automatic
+
+	column portal_release_date
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2465d519-9fba-4589-91ee-bfa902d2c819
+		sourceLineageTag: portal_release_date
+		summarizeBy: none
+		sourceColumn: portal_release_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column presentation_form
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 51e4407d-662a-4621-bbb7-ef43b134a048
+		sourceLineageTag: presentation_form
+		summarizeBy: none
+		sourceColumn: presentation_form
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_series_issue_identification_en
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b8e5c1f9-18f2-4bc4-b69c-fdd22e8132ac
+		sourceLineageTag: data_series_issue_identification_en
+		summarizeBy: none
+		sourceColumn: data_series_issue_identification_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_series_issue_identification_fr
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a11706b0-72e6-4723-afee-51de37ddee70
+		sourceLineageTag: data_series_issue_identification_fr
+		summarizeBy: none
+		sourceColumn: data_series_issue_identification_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_series_name_en
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a1937ec9-7416-44bd-9e2f-d3377ecc2278
+		sourceLineageTag: data_series_name_en
+		summarizeBy: none
+		sourceColumn: data_series_name_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_series_name_fr
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c92eb97c-db52-4773-8c92-62daa01d9319
+		sourceLineageTag: data_series_name_fr
+		summarizeBy: none
+		sourceColumn: data_series_name_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column federated_date_modified
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1f1ecda2-cbf5-475f-95b0-3f8a96412a5a
+		sourceLineageTag: federated_date_modified
+		summarizeBy: none
+		sourceColumn: federated_date_modified
+
+		annotation SummarizationSetBy = Automatic
+
+	column maintainer_contact_form_en
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f5c553d7-9327-4264-ac31-d452771906b1
+		sourceLineageTag: maintainer_contact_form_en
+		summarizeBy: none
+		sourceColumn: maintainer_contact_form_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column maintainer_contact_form_fr
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f3e545a0-fcc8-4ce4-8559-f040111db18c
+		sourceLineageTag: maintainer_contact_form_fr
+		summarizeBy: none
+		sourceColumn: maintainer_contact_form_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column audience
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1c02d8b8-2f7e-4b82-b9a0-a98437960071
+		sourceLineageTag: audience
+		summarizeBy: none
+		sourceColumn: audience
+
+		annotation SummarizationSetBy = Automatic
+
+	column geographic_region
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: cbb144f2-f7f4-48c0-bfb5-b0b8522b5945
+		sourceLineageTag: geographic_region
+		summarizeBy: none
+		sourceColumn: geographic_region
+
+		annotation SummarizationSetBy = Automatic
+
+	column place_of_publication
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8b82883f-5c99-437d-9c4a-5d1fe3636861
+		sourceLineageTag: place_of_publication
+		summarizeBy: none
+		sourceColumn: place_of_publication
+
+		annotation SummarizationSetBy = Automatic
+
+	column contributor_en
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 905d24db-26b9-46da-8f00-f87670d7c5b0
+		sourceLineageTag: contributor_en
+		summarizeBy: none
+		sourceColumn: contributor_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column contributor_fr
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 66ff96f7-7911-4c9b-8e71-5410b6946dda
+		sourceLineageTag: contributor_fr
+		summarizeBy: none
+		sourceColumn: contributor_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column org_section_en
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 82371ac0-eecb-4bc8-9b78-7fa1d1172621
+		sourceLineageTag: org_section_en
+		summarizeBy: none
+		sourceColumn: org_section_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column org_section_fr
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2b4d76f1-f0c1-4621-8c26-d96f55c150b9
+		sourceLineageTag: org_section_fr
+		summarizeBy: none
+		sourceColumn: org_section_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column program_page_url_en
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 6cd4a23f-2312-463d-913d-cd97168ac2a0
+		sourceLineageTag: program_page_url_en
+		summarizeBy: none
+		sourceColumn: program_page_url_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column program_page_url_fr
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 384514d4-2ba0-419e-bbe0-2a5a5a7a950d
+		sourceLineageTag: program_page_url_fr
+		summarizeBy: none
+		sourceColumn: program_page_url_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column departmental_identification_number
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8a1a7816-161d-429a-ba2c-3da08daac083
+		sourceLineageTag: departmental_identification_number
+		summarizeBy: none
+		sourceColumn: departmental_identification_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column edition
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f2a64d0a-0965-4f67-8dba-098975064499
+		sourceLineageTag: edition
+		summarizeBy: none
+		sourceColumn: edition
+
+		annotation SummarizationSetBy = Automatic
+
+	column gc_catalogue_number
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ce13f7ea-2ded-43ce-8349-59971b2c9b2a
+		sourceLineageTag: gc_catalogue_number
+		summarizeBy: none
+		sourceColumn: gc_catalogue_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column isbn
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 439263e3-5cbc-4248-8b3d-95c20933ba81
+		sourceLineageTag: isbn
+		summarizeBy: none
+		sourceColumn: isbn
+
+		annotation SummarizationSetBy = Automatic
+
+	column issn
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 36797391-64ef-4f58-a848-cbac023c3786
+		sourceLineageTag: issn
+		summarizeBy: none
+		sourceColumn: issn
+
+		annotation SummarizationSetBy = Automatic
+
+	column issuance
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 94c11cf8-3d19-4267-b35f-70520eba7abc
+		sourceLineageTag: issuance
+		summarizeBy: none
+		sourceColumn: issuance
+
+		annotation SummarizationSetBy = Automatic
+
+	column issuance_frequency
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8020063f-f26b-414e-8c20-c7496caa475c
+		sourceLineageTag: issuance_frequency
+		summarizeBy: none
+		sourceColumn: issuance_frequency
+
+		annotation SummarizationSetBy = Automatic
+
+	column pspc_identification_number
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b28b2ea4-6ea4-4c78-8ecc-8358781128eb
+		sourceLineageTag: pspc_identification_number
+		summarizeBy: none
+		sourceColumn: pspc_identification_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column additional_notes_en
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 9c17db06-7e11-4b17-8289-5e3594d4e3ab
+		sourceLineageTag: additional_notes_en
+		summarizeBy: none
+		sourceColumn: additional_notes_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column additional_notes_fr
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5f0cc194-cf35-4a9b-9a89-fc333d752d5b
+		sourceLineageTag: additional_notes_fr
+		summarizeBy: none
+		sourceColumn: additional_notes_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column series_publication_dates_en
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 28048419-0629-4d9b-96c7-5ed4cb544f47
+		sourceLineageTag: series_publication_dates_en
+		summarizeBy: none
+		sourceColumn: series_publication_dates_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column series_publication_dates_fr
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ece1ab68-1502-47df-ac7f-35ad9d0ddeab
+		sourceLineageTag: series_publication_dates_fr
+		summarizeBy: none
+		sourceColumn: series_publication_dates_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column parent_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 9ab7b103-6c20-4e3c-a3e7-6863af0801b6
+		sourceLineageTag: parent_id
+		summarizeBy: none
+		sourceColumn: parent_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column date_captured
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1c86848d-8703-4d7a-a975-00ab7a3e1a51
+		sourceLineageTag: date_captured
+		summarizeBy: none
+		sourceColumn: date_captured
+
+		annotation SummarizationSetBy = Automatic
+
+	column association_type
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f74e9583-81fa-42e5-906c-e6dd4260b6e7
+		sourceLineageTag: association_type
+		summarizeBy: none
+		sourceColumn: association_type
+
+		annotation SummarizationSetBy = Automatic
+
+	partition main = entity
+		mode: directLake
+		source
+			entityName: main
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

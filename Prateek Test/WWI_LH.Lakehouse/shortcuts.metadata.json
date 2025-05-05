@@ -1,0 +1,38 @@
+[
+  {
+    "name": "WWI_Products",
+    "path": "/Tables",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/dbo/sheet1",
+        "itemId": "232096c3-02d9-41fb-abf5-99dc3079e2a4",
+        "workspaceId": "a0923a92-f29f-42fe-8cb8-9a0acd1a040a"
+      }
+    }
+  },
+  {
+    "name": "WWI_FactOrders",
+    "path": "/Tables",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/dbo/WWI_FactOrders",
+        "itemId": "232096c3-02d9-41fb-abf5-99dc3079e2a4",
+        "workspaceId": "a0923a92-f29f-42fe-8cb8-9a0acd1a040a"
+      }
+    }
+  },
+  {
+    "name": "WWI_Customer",
+    "path": "/Tables",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/dbo/WWI_Customer",
+        "itemId": "232096c3-02d9-41fb-abf5-99dc3079e2a4",
+        "workspaceId": "a0923a92-f29f-42fe-8cb8-9a0acd1a040a"
+      }
+    }
+  }
+]

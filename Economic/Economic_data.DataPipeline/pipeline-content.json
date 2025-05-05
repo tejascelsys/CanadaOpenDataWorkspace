@@ -1,0 +1,420 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "type": "ForEach",
+        "typeProperties": {
+          "items": {
+            "value": "@pipeline().parameters.cw_items_lxn",
+            "type": "Expression"
+          },
+          "activities": [
+            {
+              "type": "Copy",
+              "typeProperties": {
+                "source": {
+                  "type": "LakehouseTableSource",
+                  "datasetSettings": {
+                    "type": "LakehouseTable",
+                    "typeProperties": {
+                      "table": {
+                        "value": "@item().source.table",
+                        "type": "Expression"
+                      }
+                    },
+                    "schema": [],
+                    "linkedService": {
+                      "name": "Economic",
+                      "properties": {
+                        "type": "Lakehouse",
+                        "typeProperties": {
+                          "artifactId": "3edb1cf0-e1c4-bab0-4cec-aae3082bf411",
+                          "workspaceId": "00000000-0000-0000-0000-000000000000",
+                          "rootFolder": "Tables"
+                        },
+                        "annotations": []
+                      }
+                    },
+                    "annotations": []
+                  }
+                },
+                "sink": {
+                  "type": "DataWarehouseSink",
+                  "tableOption": "autoCreate",
+                  "allowCopyCommand": true,
+                  "copyCommandSettings": {},
+                  "datasetSettings": {
+                    "type": "DataWarehouseTable",
+                    "typeProperties": {
+                      "schema": "economic",
+                      "table": {
+                        "value": "@item().destination.table",
+                        "type": "Expression"
+                      }
+                    },
+                    "schema": [],
+                    "linkedService": {
+                      "name": "CanadaOpenDataWH",
+                      "properties": {
+                        "type": "DataWarehouse",
+                        "typeProperties": {
+                          "artifactId": "de169c6b-89c2-4347-a9e0-6d745de4d395",
+                          "endpoint": "eqrolrmz5zeujbxet5y5gdzwdm-si5jfie76l7efdfytifm2gqebi.datawarehouse.fabric.microsoft.com",
+                          "workspaceId": "a0923a92-f29f-42fe-8cb8-9a0acd1a040a"
+                        },
+                        "annotations": []
+                      }
+                    },
+                    "annotations": []
+                  }
+                },
+                "translator": {
+                  "value": "@item().copyActivity.translator",
+                  "type": "Expression"
+                },
+                "enableStaging": true
+              },
+              "policy": {
+                "timeout": "0.12:00:00",
+                "retry": 0,
+                "retryIntervalInSeconds": 30,
+                "secureInput": false,
+                "secureOutput": false
+              },
+              "name": "Copy_lxn",
+              "dependsOn": []
+            }
+          ]
+        },
+        "name": "ForEach_lxn",
+        "dependsOn": []
+      }
+    ],
+    "parameters": {
+      "cw_items_lxn": {
+        "type": "Array",
+        "defaultValue": [
+          {
+            "source": {
+              "table": "expenditure_based"
+            },
+            "destination": {
+              "table": "expenditure_based"
+            },
+            "copyActivity": {
+              "translator": {
+                "type": "TabularTranslator",
+                "mappings": [
+                  {
+                    "source": {
+                      "name": "REF_DATE",
+                      "type": "Int64",
+                      "physicalType": "long"
+                    },
+                    "sink": {
+                      "name": "REF_DATE",
+                      "physicalType": "bigint"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "GEO",
+                      "type": "String",
+                      "physicalType": "string"
+                    },
+                    "sink": {
+                      "name": "GEO",
+                      "physicalType": "varchar",
+                      "length": "8000"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "DGUID",
+                      "type": "String",
+                      "physicalType": "string"
+                    },
+                    "sink": {
+                      "name": "DGUID",
+                      "physicalType": "varchar",
+                      "length": "8000"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "Prices",
+                      "type": "String",
+                      "physicalType": "string"
+                    },
+                    "sink": {
+                      "name": "Prices",
+                      "physicalType": "varchar",
+                      "length": "8000"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "Estimates",
+                      "type": "String",
+                      "physicalType": "string"
+                    },
+                    "sink": {
+                      "name": "Estimates",
+                      "physicalType": "varchar",
+                      "length": "8000"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "UOM",
+                      "type": "String",
+                      "physicalType": "string"
+                    },
+                    "sink": {
+                      "name": "UOM",
+                      "physicalType": "varchar",
+                      "length": "8000"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "UOM_ID",
+                      "type": "Int64",
+                      "physicalType": "long"
+                    },
+                    "sink": {
+                      "name": "UOM_ID",
+                      "physicalType": "bigint"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "SCALAR_FACTOR",
+                      "type": "String",
+                      "physicalType": "string"
+                    },
+                    "sink": {
+                      "name": "SCALAR_FACTOR",
+                      "physicalType": "varchar",
+                      "length": "8000"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "SCALAR_ID",
+                      "type": "Int64",
+                      "physicalType": "long"
+                    },
+                    "sink": {
+                      "name": "SCALAR_ID",
+                      "physicalType": "bigint"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "VECTOR",
+                      "type": "String",
+                      "physicalType": "string"
+                    },
+                    "sink": {
+                      "name": "VECTOR",
+                      "physicalType": "varchar",
+                      "length": "8000"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "COORDINATE",
+                      "type": "String",
+                      "physicalType": "string"
+                    },
+                    "sink": {
+                      "name": "COORDINATE",
+                      "physicalType": "varchar",
+                      "length": "8000"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "VALUE",
+                      "type": "Double",
+                      "physicalType": "double"
+                    },
+                    "sink": {
+                      "name": "VALUE",
+                      "physicalType": "float"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "DECIMALS",
+                      "type": "Int64",
+                      "physicalType": "long"
+                    },
+                    "sink": {
+                      "name": "DECIMALS",
+                      "physicalType": "bigint"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "source": {
+              "table": "income_based"
+            },
+            "destination": {
+              "table": "income_based"
+            },
+            "copyActivity": {
+              "translator": {
+                "type": "TabularTranslator",
+                "mappings": [
+                  {
+                    "source": {
+                      "name": "REF_DATE",
+                      "type": "Int64",
+                      "physicalType": "long"
+                    },
+                    "sink": {
+                      "name": "REF_DATE",
+                      "physicalType": "bigint"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "GEO",
+                      "type": "String",
+                      "physicalType": "string"
+                    },
+                    "sink": {
+                      "name": "GEO",
+                      "physicalType": "varchar",
+                      "length": "8000"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "DGUID",
+                      "type": "String",
+                      "physicalType": "string"
+                    },
+                    "sink": {
+                      "name": "DGUID",
+                      "physicalType": "varchar",
+                      "length": "8000"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "Estimates",
+                      "type": "String",
+                      "physicalType": "string"
+                    },
+                    "sink": {
+                      "name": "Estimates",
+                      "physicalType": "varchar",
+                      "length": "8000"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "UOM",
+                      "type": "String",
+                      "physicalType": "string"
+                    },
+                    "sink": {
+                      "name": "UOM",
+                      "physicalType": "varchar",
+                      "length": "8000"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "UOM_ID",
+                      "type": "Int64",
+                      "physicalType": "long"
+                    },
+                    "sink": {
+                      "name": "UOM_ID",
+                      "physicalType": "bigint"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "SCALAR_FACTOR",
+                      "type": "String",
+                      "physicalType": "string"
+                    },
+                    "sink": {
+                      "name": "SCALAR_FACTOR",
+                      "physicalType": "varchar",
+                      "length": "8000"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "SCALAR_ID",
+                      "type": "Int64",
+                      "physicalType": "long"
+                    },
+                    "sink": {
+                      "name": "SCALAR_ID",
+                      "physicalType": "bigint"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "VECTOR",
+                      "type": "String",
+                      "physicalType": "string"
+                    },
+                    "sink": {
+                      "name": "VECTOR",
+                      "physicalType": "varchar",
+                      "length": "8000"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "COORDINATE",
+                      "type": "Double",
+                      "physicalType": "double"
+                    },
+                    "sink": {
+                      "name": "COORDINATE",
+                      "physicalType": "float"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "VALUE",
+                      "type": "Double",
+                      "physicalType": "double"
+                    },
+                    "sink": {
+                      "name": "VALUE",
+                      "physicalType": "float"
+                    }
+                  },
+                  {
+                    "source": {
+                      "name": "DECIMALS",
+                      "type": "Int64",
+                      "physicalType": "long"
+                    },
+                    "sink": {
+                      "name": "DECIMALS",
+                      "physicalType": "bigint"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

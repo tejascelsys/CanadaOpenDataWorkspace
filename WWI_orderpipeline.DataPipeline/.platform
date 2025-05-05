@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataPipeline",
+    "displayName": "WWI_orderpipeline"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "62c55162-7715-a879-4920-524c6dff2ad9"
+  }
+}

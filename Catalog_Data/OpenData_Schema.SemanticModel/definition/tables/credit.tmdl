@@ -1,0 +1,63 @@
+table credit
+	lineageTag: efc234f3-83d4-482b-a7d8-f5666388053a
+	sourceLineageTag: [dbo].[credit]
+
+	column _link
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8f66cb71-24f4-4195-856d-f1e4de0ff0b4
+		sourceLineageTag: _link
+		summarizeBy: none
+		sourceColumn: _link
+
+		annotation SummarizationSetBy = Automatic
+
+	column _link_main
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3cf6e417-6c2b-4c56-ac28-3918857cb037
+		sourceLineageTag: _link_main
+		summarizeBy: none
+		sourceColumn: _link_main
+
+		annotation SummarizationSetBy = Automatic
+
+	column credit_name_en
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 51321386-337a-469c-a8b6-0e09bb8db2e1
+		sourceLineageTag: credit_name_en
+		summarizeBy: none
+		sourceColumn: credit_name_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column credit_name_fr
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c6ef40ac-c9e7-453c-beeb-88d0fcc40ddc
+		sourceLineageTag: credit_name_fr
+		summarizeBy: none
+		sourceColumn: credit_name_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column main_id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 7f6e8d37-4a3e-4b72-9a34-67550b11ea1c
+		sourceLineageTag: main_id
+		summarizeBy: none
+		sourceColumn: main_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition credit = entity
+		mode: directLake
+		source
+			entityName: credit
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

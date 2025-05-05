@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Census_report"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "564449fa-6ca9-86ef-48c6-4ebfce12e713"
+  }
+}

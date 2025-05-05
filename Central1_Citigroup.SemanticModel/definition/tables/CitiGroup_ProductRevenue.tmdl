@@ -1,0 +1,47 @@
+table CitiGroup_ProductRevenue
+	lineageTag: 78c2099b-aef9-4e45-bcc7-1547fd3d9330
+	sourceLineageTag: [central1].[CitiGroup_ProductRevenue]
+
+	column ProductLine
+		dataType: string
+		sourceProviderType: varchar(100)
+		lineageTag: 25c470ec-6a92-4fb6-81cc-cc5e9cffe2df
+		sourceLineageTag: ProductLine
+		summarizeBy: none
+		sourceColumn: ProductLine
+
+		annotation SummarizationSetBy = Automatic
+
+	column Revenue
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 7c8404a2-6528-4882-aaad-abd1765431da
+		sourceLineageTag: Revenue
+		summarizeBy: sum
+		sourceColumn: Revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PercentageContribution
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 117e5ba5-1689-4123-935a-542a124dd7c5
+		sourceLineageTag: PercentageContribution
+		summarizeBy: sum
+		sourceColumn: PercentageContribution
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition CitiGroup_ProductRevenue = entity
+		mode: directLake
+		source
+			entityName: CitiGroup_ProductRevenue
+			schemaName: central1
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

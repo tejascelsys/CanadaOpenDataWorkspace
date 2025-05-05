@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Warehouse",
+    "displayName": "CanadaOpenDataWH",
+    "description": ""
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "5de4d395-6d74-a9e0-4347-89c2de169c6b"
+  }
+}

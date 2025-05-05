@@ -1,0 +1,69 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.60\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "d256993b314ad6d16efd",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"26b132ad4bec7a788cdf\",\"layouts\":[{\"id\":0,\"position\":{\"x\":61.95242001640689,\"y\":46.20180475799836,\"z\":0,\"width\":269.8605414273995,\"height\":101.85397867104183,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"2021_population.GEO_LEVEL\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"2\",\"Entity\":\"2021_population\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"GEO_LEVEL\"},\"Name\":\"2021_population.GEO_LEVEL\",\"NativeReferenceName\":\"GEO_LEVEL\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"2\",\"Entity\":\"2021_population\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"GEO_LEVEL\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Territory'\"}}]]}}}]}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Geographical Division'\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}},\"outlineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"4D\"}}}}}],\"items\":[{\"properties\":{\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"padding\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"lockAspect\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"padding\":[{\"properties\":{\"bottom\":{\"expr\":{\"Literal\":{\"Value\":\"5D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 101.85,
+          "width": 269.86,
+          "x": 61.95,
+          "y": 46.20,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"bbd757b8034da2592d79\",\"layouts\":[{\"id\":0,\"position\":{\"x\":88.20344544708777,\"y\":296.1115668580804,\"z\":2000,\"width\":1058.4413453650532,\"height\":407.4159146841673,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"2021_population.CHARACTERISTIC_NAME\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(2021_population.C12_RATE_WOMEN+)\"},{\"queryRef\":\"Sum(2021_population.C11_RATE_MEN+)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"2\",\"Entity\":\"2021_population\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"CHARACTERISTIC_NAME\"},\"Name\":\"2021_population.CHARACTERISTIC_NAME\",\"NativeReferenceName\":\"CHARACTERISTIC_NAME\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"C11_RATE_MEN+\"}},\"Function\":1},\"Name\":\"Sum(2021_population.C11_RATE_MEN+)\",\"NativeReferenceName\":\"Average of RATE_MEN\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"C12_RATE_WOMEN+\"}},\"Function\":1},\"Name\":\"Sum(2021_population.C12_RATE_WOMEN+)\",\"NativeReferenceName\":\"Average of RATE_WOMEN\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"C12_RATE_WOMEN+\"}},\"Function\":1}}}]},\"columnProperties\":{\"Sum(2021_population.C12_RATE_WOMEN+)\":{\"displayName\":\"Average of RATE_WOMEN\"},\"Sum(2021_population.C11_RATE_MEN+)\":{\"displayName\":\"Average of RATE_MEN\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 407.42,
+          "width": 1058.44,
+          "x": 88.20,
+          "y": 296.11,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"bdd122dc1ebae72e0076\",\"layouts\":[{\"id\":0,\"position\":{\"x\":389.5652173913043,\"y\":46.20180475799836,\"z\":1000,\"width\":279.3109105824446,\"height\":111.30434782608695,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"2021_population.GEO_NAME\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"2\",\"Entity\":\"2021_population\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"GEO_NAME\"},\"Name\":\"2021_population.GEO_NAME\",\"NativeReferenceName\":\"GEO_NAME\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"2\",\"Entity\":\"2021_population\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"GEO_NAME\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Northwest Territories'\"}}]]}}}]}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Geographical Name'\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}},\"outlineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"4D\"}}}}}],\"items\":[{\"properties\":{\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}]},\"vcObjects\":{\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 111.30,
+          "width": 279.31,
+          "x": 389.57,
+          "y": 46.20,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"c5a8d856328fbc8fcc6b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":737.1287940935192,\"y\":0,\"z\":3000,\"width\":470.41837571780144,\"height\":304.5118949958983,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(2021_population.C2_COUNT_MEN+)\"},{\"queryRef\":\"Sum(2021_population.C3_COUNT_WOMEN+)\"}],\"Tooltips\":[{\"queryRef\":\"Sum(2021_population.C1_COUNT_TOTAL)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"2\",\"Entity\":\"2021_population\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"C2_COUNT_MEN+\"}},\"Function\":1},\"Name\":\"Sum(2021_population.C2_COUNT_MEN+)\",\"NativeReferenceName\":\"COUNT_MEN\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"C3_COUNT_WOMEN+\"}},\"Function\":1},\"Name\":\"Sum(2021_population.C3_COUNT_WOMEN+)\",\"NativeReferenceName\":\"COUNT_WOMEN\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"C1_COUNT_TOTAL\"}},\"Function\":1},\"Name\":\"Sum(2021_population.C1_COUNT_TOTAL)\",\"NativeReferenceName\":\"Average of C1_COUNT_TOTAL\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"2\"}},\"Property\":\"C2_COUNT_MEN+\"}},\"Function\":1}}}]},\"columnProperties\":{\"Sum(2021_population.C2_COUNT_MEN+)\":{\"displayName\":\"COUNT_MEN\"},\"Sum(2021_population.C3_COUNT_WOMEN+)\":{\"displayName\":\"COUNT_WOMEN\"},\"Sum(2021_population.C1_COUNT_TOTAL)\":{\"displayName\":\"TOTAL_COUNT\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 304.51,
+          "width": 470.42,
+          "x": 737.13,
+          "y": 0.00,
+          "z": 3000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
